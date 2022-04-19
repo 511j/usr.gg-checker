@@ -1,1 +1,1 @@
-# usr.gg-checker
+# Simple usr.gg checker
