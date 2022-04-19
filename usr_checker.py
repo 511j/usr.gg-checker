@@ -26,5 +26,7 @@ while 1:
         embed.add_embed_field(name='Usr.gg username : ', value=f"{user}")
         webhook.add_embed(embed)
         response = webhook.execute()
+    else:
+        print(f"{Fore.RED}Blocked{Fore.WHITE}")
 for _ in range(th):
     threading.Thread(target=user).start()
