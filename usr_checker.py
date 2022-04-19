@@ -11,7 +11,7 @@ webhhok = input(f"{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Webhook :{Fore.CYAN} 
 leg = int(input(f'{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Length : {Fore.CYAN}'))
 th = input(f"{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Treads :{Fore.CYAN} ")
 print()
-li = '1234567890qwer.tyuioplkmjnhbgvfcdxzsa_'
+li = 'qwertyuiopasdfghjklzxcvbnm1234567890-'
 while 1:
     user = ("".join(random.choice(li) for i in range(leg)))
     r = requests.get(f"https://usr.gg/{user}")
