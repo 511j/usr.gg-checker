@@ -10,14 +10,15 @@ os.system("cls")
 webhhok = input(f"{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Webhook :{Fore.CYAN} ")
 leg = int(input(f'{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Length : {Fore.CYAN}'))
 th = input(f"{Fore.WHITE}[ {Fore.CYAN}+{Fore.WHITE} ] Treads :{Fore.CYAN} ")
+print()
 li = '.1234567890qwer.tyuioplkmjnhbgvfcdxzsa_'
 while 1:
     user = ("".join(random.choice(li) for i in range(leg)))
     r = requests.get(f"https://usr.gg/{user}")
     if (r.status_code == 200):
-        print(f"{Fore.RED} Unavailable >> {user}{Fore.WHITE}")
+        print(f"{Fore.RED}Unavailable >> {user}{Fore.WHITE}")
     if (r.status_code == 404):
-        print(f"{Fore.GREEN} Available >> {user}{Fore.WHITE}")
+        print(f"{Fore.GREEN}Available >> {user}{Fore.WHITE}")
         webhook = DiscordWebhook(url=f'{webhhok}')
         embed = DiscordEmbed(title='#Lord4tb usr.gg checker', color='a63028')
         embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/962419141892009994/966089585157353484/anime.gif')
